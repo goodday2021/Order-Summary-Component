@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--Pale-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.bg-img {
+    position: absolute;
+    background: url(./images/pattern-background-mobile.svg) no-repeat center/cover;
+    height: 397px;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    z-index: -1;
+}
+
+.card {
+    border-radius: 20px;
+    margin: 10px; /*play around*/
+    background-color: white;
+    box-shadow: 5px 15px 5px solid hsl(0, 0, 0, 0.20);
+}
+
+.hero {
+    width: 100%;
+    border-radius: 23px 23px 0 0;
+    margin-bottom: 24px;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 53px 0 53px;
+}
+
+.desc h1 {
+    font-size: 24px;
+    font-weight: 900;
+    margin-bottom: 23px;
+    color: var(--Dark-blue);
+}
+
+.desc p {
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.pay {
+    background-color: var(--Very-pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2px 31px 20px 31px;
+    padding: 20px;
+    border-radius: 15px; 
+}
+
+.pay article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pay article img {
+    margin-right: 22px;
+}
+
+.pay article h1 {
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 16.5px;  
+}
+
+.pay article p {
+    color: var(--Desaturated-blue);
+}
+
+.pay button {
+    font-weight: 700;
+    color: var(--Bright-blue);
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+.pay button:hover {
+    cursor: pointer;
+    color: hsl(245, 75%, 52%, 75%);
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.action .proceed {
+    background-color: var(--Bright-blue);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 18px 0;
+    margin: 0 31px 29px 31px ;
+    border-radius: 14px;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 1.5px 12.5px 8px 8.5px hsl(245, 75%, 52%, 6%);
+}
+
+.action .proceed:hover {
+    cursor: pointer;
+    background-color: hsl(245, 75%, 52%, 75%);
+    transition: ease-in-out;
+}
+
+.action .cancel {
+    margin: 3px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--Desaturated-blue);
+}
+
+.action .cancel:hover {
+    cursor: pointer;
+    color: var(--Dark-blue);
+}
+
+.attribution {
+    padding: 30px;
+    font-size: 14px;
+    color: var(--Desaturated-blue);
+}
+
+.attribution a {
+    color: var(--Bright-blue);
+}
+
+@media (min-width: 500px) {
+    .card {
+        width: 400px;
+    }
+}
