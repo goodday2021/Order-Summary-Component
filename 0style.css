@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap'); /*imported font-family*/
 
-* {
+* { /*set default CSS styles*/
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*makes dealing with the sizes of elements much easier*/
 }
 
-:root {
+:root { /*colors used*/
     --Pale-blue: hsl(225, 100%, 94%);
     --Bright-blue: hsl(245, 75%, 52%);
     --Very-pale-blue: hsl(225, 100%, 98%);
@@ -15,22 +15,23 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; site's /*for the site's typography to scale proportionally to whatever default browser setting*/
 }
 
-img {
-    max-width: 100%;
+img { 
+    max-width: 100%; /*to make images not larger than the window or the container unless specified*/
 }
 
 body {
-    font-family: 'Red Hat Display', sans-serif;
+    font-family: 'Red Hat Display', sans-serif; /*RHD is the imported font and S-S is the fallback font*/
     font-size: 16px;
-    background-color: var(--Pale-blue);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: var(--Pale-blue); /*background color when page is viewed on mobile devices*/
+    display: flex; 
+    flex-direction: column; /*to align everything top to bottom*/
+    align-items: center; 
     justify-content: center;
-    min-height: 100vh;
+    min-height: 100vh; /*the use of min-height will let the body element grow even more if necessary, 
+                        100vh means that the initial body height will take 100% of the viewport height*/
 }
 
 .bg-img {
